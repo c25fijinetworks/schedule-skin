@@ -1,0 +1,43 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Pricing from '~/components/widgets/Pricing.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import { lifetimeDeal } from '~/data/pricingData';
+
+const metadata = { 
+  title: 'Pricing - Schedule.Hair | Professional Digital Presence', 
+  description: 'Elevate your salon brand with a professional vanity URL. One-time fee for a lifetime of premium bookings.' 
+};
+---
+<Layout metadata={metadata}>
+  <HeroText 
+    tagline="Elevate Your Digital Handshake"
+    title="Your Professional Identity, <span class='text-accent'>Perfected.</span>" 
+    subtitle="Generic booking links look temporary. We build you a branded vanity URL that integrates directly with your Google Business Profile 'Schedule' link. Make your first impression count with an experience that signals trust and artistry."
+  />
+
+  <Pricing prices={[lifetimeDeal]} />
+
+  <Features3
+    title="Premium Features Included"
+    columns={3}
+    items={[
+      { title: 'Branded Vanity URL', description: 'A clean, memorable web address (yoursalon.schedule.hair) that belongs to you.', icon: 'tabler:link' },
+      { title: 'Google Business Sync', description: 'Expert help linking your URL to the blue Google "Schedule" button for maximum SEO.', icon: 'tabler:brand-google' },
+      { title: 'Boutique UX', description: 'A mobile-first booking interface designed to look like a luxury salon app.', icon: 'tabler:device-mobile' },
+      { title: 'Unlimited Potential', description: 'Zero caps on appointments, services, or revenue. Your business, your growth.', icon: 'tabler:infinity' },
+      { title: 'Immediate Trust', description: 'Show clients you are an established professional from the very first click.', icon: 'tabler:shield-check' },
+      { title: 'Lifetime Setup', description: 'Pay once, own it forever. We handle hosting and technical maintenance.', icon: 'tabler:tool' },
+    ]}
+  />
+
+  <FAQs
+    title="Frequently Asked Questions"
+    items={[
+        { title: 'How does this help my Google ranking?', description: 'Google prioritizes salons with high-quality, relevant links. A clean schedule.hair domain linked to your profile signals to Google that your digital presence is managed and professional.', icon: 'tabler:trending-up' },
+        { title: 'Can I use this with my existing calendar?', description: 'Yes! We act as your high-end front door. We can link your vanity URL to any existing system or provide you with our own custom calendar interface.', icon: 'tabler:layout' },
+    ]}
+  />
+</Layout>
