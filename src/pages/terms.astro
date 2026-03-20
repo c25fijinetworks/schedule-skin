@@ -1,16 +1,31 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-const metadata = { title: 'Terms of Service | Schedule.Skin' };
+
+const metadata = {
+  title: 'Terms of Service | Schedule.Skin',
+};
 ---
+
 <Layout metadata={metadata}>
   <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-4xl">
-    <h1 class="font-bold font-heading text-4xl md:text-5xl mb-8">Terms of Service</h1>
-    <div class="prose prose-lg dark:prose-invert">
-      <p>Welcome to <strong>Schedule.Skin</strong>. By using our services, you agree to these terms regarding your clinic's professional vanity URL.</p>
-      <h3>1. Service</h3>
-      <p>Schedule.Skin provides a technical setup for skin care clinics, including custom vanity URLs (yourclinic.schedule.skin).</p>
-      <h3>2. Payments</h3>
-      <p>The $99 fee is a one-time setup fee for a lifetime license to the vanity URL redirect service.</p>
+    <h1 class="font-bold font-heading text-4xl md:text-5xl leading-tighter tracking-tighter mb-8">Terms of Service</h1>
+    <div class="mx-auto prose prose-lg max-w-4xl dark:prose-invert dark:prose-headings:text-slate-300 prose-md prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-blue-600 dark:prose-a:text-blue-400 mt-8">
+      <p>Welcome to <strong>Schedule.Skin</strong>. These Terms of Service ("Terms") govern your use of our website and services provided to skin care professionals and clinic owners.</p>
+      
+      <h2 class="text-2xl font-bold mt-8">1. Service Overview</h2>
+      <p>Schedule.Skin provides a technical setup service for professional vanity URLs (e.g., yourclinic.schedule.skin). We act as a technical intermediary to help clinics link their booking systems to their Google Business Profiles and social media platforms.</p>
+
+      <h2 class="text-2xl font-bold mt-8">2. One-Time Setup Fee</h2>
+      <p>The service is provided for a one-time fee of $99. This fee covers the labor and software configuration required to establish your vanity URL. There are no monthly recurring subscription fees ("SaaS tax") for the standard redirect and landing page hosting provided at the time of setup.</p>
+
+      <h2 class="text-2xl font-bold mt-8">3. Vanity URL Ownership</h2>
+      <p>Your chosen vanity URL is licensed to you for as long as the Schedule.Skin platform is operational. We reserve the right to reclaim or reassign URLs that have been inactive for more than 24 months or are used for fraudulent or prohibited activities.</p>
+
+      <h2 class="text-2xl font-bold mt-8">4. White-Glove Setup Warranty</h2>
+      <p>We provide a "Same-Day Setup" guarantee for orders placed before 2 PM EST on business days. If we fail to deliver your initial setup within 24 hours, you are entitled to a full refund of your setup fee upon request.</p>
+
+      <h2 class="text-2xl font-bold mt-8">5. Limitation of Liability</h2>
+      <p>Schedule.Skin is a technical tool. We are not responsible for the actual management of your clinic, patient appointments, or any disputes between you and your clients. We provide the "front door" to your booking system; the management of the building remains your responsibility.</p>
     </div>
   </section>
 </Layout>

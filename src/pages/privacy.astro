@@ -1,12 +1,31 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-const metadata = { title: 'Privacy Policy | Schedule.Skin' };
+
+const metadata = {
+  title: 'Privacy Policy | Schedule.Skin',
+};
 ---
+
 <Layout metadata={metadata}>
   <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-4xl">
-    <h1 class="font-bold font-heading text-4xl md:text-5xl mb-8">Privacy Policy</h1>
-    <div class="prose prose-lg dark:prose-invert">
-      <p>At <strong>Schedule.Skin</strong>, we prioritize clinic and patient privacy. We collect only the data necessary to provide your professional URL redirection.</p>
+    <h1 class="font-bold font-heading text-4xl md:text-5xl leading-tighter tracking-tighter mb-8">Privacy Policy</h1>
+    <div class="mx-auto prose prose-lg max-w-4xl dark:prose-invert dark:prose-headings:text-slate-300 prose-md prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-blue-600 dark:prose-a:text-blue-400 mt-8">
+      <p>At <strong>Schedule.Skin</strong>, we are committed to protecting the privacy of skin care professionals and their patients. This Privacy Policy explains how we collect and use data.</p>
+      
+      <h2 class="text-2xl font-bold mt-8">Data We Collect</h2>
+      <p>We collect essential business information required to create your vanity URL, including your clinic name, existing booking links, and business contact information provided during the checkout process.</p>
+
+      <h2 class="text-2xl font-bold mt-8">Google Business Integration</h2>
+      <p>When providing "White-Glove" setup support for your Google Business Profile, we do not require or store your Google account passwords. We utilize public links and guided setup to maintain your clinic's security.</p>
+
+      <h2 class="text-2xl font-bold mt-8">Patient Data</h2>
+      <p>Schedule.Skin does not store patient medical records or individual appointment data. Any information entered by your clients into your booking system is handled directly by your primary booking provider (e.g., Jane, Vagaro, Fresha, etc.) and is subject to their respective privacy policies.</p>
+
+      <h2 class="text-2xl font-bold mt-8">Payment Processing</h2>
+      <p>Payments are processed via secure third-party gateways (PayPal or Stripe). Schedule.Skin does not store credit card or bank account information on our servers.</p>
+
+      <h2 class="text-2xl font-bold mt-8">Updates</h2>
+      <p>We may update this policy from time to time to reflect changes in our technical services or legal obligations. The most current version will always be posted here.</p>
     </div>
   </section>
 </Layout>
