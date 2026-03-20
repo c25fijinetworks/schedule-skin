@@ -4,8 +4,8 @@ export const lifetimeDeal = {
   price: 99,
   period: 'One-time payment',
   items: [
-    { description: 'Premium Vanity URL (yoursalon.schedule.hair)' },
-    { description: 'Boutique Branding & Custom Setup' },
+    { description: 'Premium Vanity URL (yourclinic.schedule.skin)' },
+    { description: 'Medical-Grade Branding & Custom Setup' },
     { description: 'Real-time Calendar & Booking' },
     { description: 'Mobile-First User Experience' },
     { description: 'Social & Google Business Integration' },

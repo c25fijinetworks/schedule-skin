@@ -43,7 +43,7 @@ const { title, subtitle, tagline, prices = [], classes = {}, ...rest } = Astro.p
             <input type="hidden" name="business" value="ZFG89TK2KESFG" />
             
             {/* THIS ITEM NAME IS UPDATED DYNAMICALLY BY THE SCRIPT BELOW */}
-            <input type="hidden" id="dynamic-item-name" name="item_name" value="Schedule Hair Professional Vanity URL Setup" />
+            <input type="hidden" id="dynamic-item-name" name="item_name" value="Schedule.Skin Professional Vanity URL Setup" />
             
             <input type="hidden" name="item_number" value="SHURL99" />
             <input type="hidden" name="amount" value="99.00" />
@@ -69,7 +69,7 @@ const { title, subtitle, tagline, prices = [], classes = {}, ...rest } = Astro.p
               <div class="mt-3 p-4 bg-white dark:bg-slate-950 rounded-xl border-2 border-dashed border-blue-600/30 flex items-center gap-3">
                 <Icon name="tabler:world" class="w-5 h-5 text-blue-600" />
                 <span class="text-sm font-bold truncate text-slate-600 dark:text-slate-400">
-                    https://<span id="vanity-preview" class="text-blue-600 underline decoration-2 underline-offset-4">yoursalon</span>.schedule.hair
+                    https://<span id="vanity-preview" class="text-blue-600 underline decoration-2 underline-offset-4">yoursalon</span>.schedule.skin
                 </span>
               </div>
             </div>
@@ -125,7 +125,7 @@ const { title, subtitle, tagline, prices = [], classes = {}, ...rest } = Astro.p
         const url = input.value || 'yoursalon';
         const salon = salonInput.value || 'Salon Name';
         // This updates the PayPal cart text dynamically on click
-        dynamicItem.value = `Setup: ${url}.schedule.hair | Salon: ${salon}`;
+        dynamicItem.value = `Setup: ${url}.schedule.skin | Salon: ${salon}`;
       });
     }
   }

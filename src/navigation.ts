@@ -15,10 +15,10 @@ export const headerData = {
 export const footerData = {
   links: [
     {
-      title: 'Schedule.Hair — Boutique Booking for Stylists',
+      title: 'Schedule.Skin — Boutique Booking for Clinicians',
       links: [
         { text: "Claim Your Spot – $99", href: getPermalink('/pricing') },
-        { text: 'Why We Love Salons', href: getPermalink('/about') },
+        { text: 'Why We Love Clinics', href: getPermalink('/about') },
         { text: 'Support', href: getPermalink('/contact') },
       ],
     },
@@ -28,5 +28,5 @@ export const footerData = {
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [],
-  footNote: '✂️ Schedule Hair — Fill Your Chairs on Autopilot. | © ' + new Date().getFullYear() + ' Schedule.Hair',
+  footNote: '✨ Schedule Skin — Fill Your Treatment Rooms on Autopilot. | © ' + new Date().getFullYear() + ' Schedule.Skin',
 };
