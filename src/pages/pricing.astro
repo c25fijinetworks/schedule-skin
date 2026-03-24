@@ -5,39 +5,53 @@ import Pricing from '~/components/widgets/Pricing.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import { lifetimeDeal } from '~/data/pricingData';
+import Hero from '~/components/widgets/Hero.astro';
 
 const metadata = { 
-  title: 'Pricing - Schedule.Skin | Professional Digital Presence', 
-  description: 'Elevate your Clinic brand with a professional vanity URL. One-time fee for a lifetime of premium bookings.' 
+  title: 'Pricing | Secure Your Elite Launch.Skin URL', 
+  description: 'Professional clinic vanity URLs with zero monthly fees. Transform your Google Business Profile and Social Bio into a luxury portfolio.' 
 };
 ---
 <Layout metadata={metadata}>
   <HeroText 
-    tagline="Elevate Your Digital Handshake"
-    title="Your Professional Identity, <span class='text-accent'>Perfected.</span>" 
-    subtitle="Generic booking links look temporary. We build you a branded vanity URL that integrates directly with your Google Business Profile 'Schedule' link. Make your first impression count with an experience that signals trust and artistry."
+    tagline="The Professional Standard"
+    title="A Stunning Home for Your Expertise. Live in Hours." 
+    subtitle="More than just a link—it's your clinic's digital flagship. Own a beautiful vanity URL (launch.skin/yourclinic) that transforms your social bio into a high-end experience."
   />
 
-  <Pricing prices={[lifetimeDeal]} />
+  <div class="-mt-16">
+    <Pricing prices={[lifetimeDeal]} />
+  </div>
 
   <Features3
-    title="Premium Features Included"
+    title="Elevate Every Touchpoint"
+    subtitle="We bridge the gap between your hard work in the clinic and your presence online."
     columns={3}
     items={[
-      { title: 'Branded Vanity URL', description: 'A clean, memorable web address (yourClinic.schedule.skin) that belongs to you.', icon: 'tabler:link' },
-      { title: 'Google Business Sync', description: 'Expert help linking your URL to the blue Google "Schedule" button for maximum SEO.', icon: 'tabler:brand-google' },
-      { title: 'Boutique UX', description: 'A mobile-first booking interface designed to look like a luxury Clinic app.', icon: 'tabler:device-mobile' },
-      { title: 'Unlimited Potential', description: 'Zero caps on appointments, services, or revenue. Your business, your growth.', icon: 'tabler:infinity' },
-      { title: 'Immediate Trust', description: 'Show clients you are an established professional from the very first click.', icon: 'tabler:shield-check' },
-      { title: 'Lifetime Setup', description: 'Pay once, own it forever. We handle hosting and technical maintenance.', icon: 'tabler:tool' },
+      { title: 'Social Bio Transformation', description: 'Ditch generic link tools. Your URL provides a high-end experience that keeps patients focused on your results.', icon: 'tabler:link' },
+      { title: 'Google Business Authority', description: 'Replace generic links on your Google Profile with a dedicated clinic homepage that creates a massive authority signal.', icon: 'tabler:brand-google' },
+      { title: 'Live Portfolio Sync', description: 'We pull your live Instagram results directly onto your unique URL, ensuring your portfolio is always current.', icon: 'tabler:brand-instagram' },
+      { title: 'Clinical Menu Styling', description: 'Present your procedures with medical-grade styling, detailing your specialties beautifully.', icon: 'tabler:clipboard-list' },
+      { title: 'One-Time License', description: 'No monthly SaaS Taxes. Pay once and own your professional identity for life. We handle the hosting and security.', icon: 'tabler:coin' },
+      { title: 'White-Glove Delivery', description: 'From setup to result syncing, we handle the technical heavy lifting with same-day delivery.', icon: 'tabler:headset' },
     ]}
   />
 
   <FAQs
-    title="Frequently Asked Questions"
+    class="-mt-16 px-6"
+    title="Pricing & Setup Questions"
     items={[
-        { title: 'How does this help my Google ranking?', description: 'Google prioritizes Clinics with high-quality, relevant links. A clean schedule.skin domain linked to your profile signals to Google that your digital presence is managed and professional.', icon: 'tabler:trending-up' },
-        { title: 'Can I use this with my existing calendar?', description: 'Yes! We act as your high-end front door. We can link your vanity URL to any existing system or provide you with our own custom calendar interface.', icon: 'tabler:layout' },
+        { title: 'How does same-day setup work?', description: 'Secure your license, fill out our brief form, and if received by 2PM EST, your site goes live before the business day ends.', icon: 'tabler:bolt' },
+        { title: 'Can I use a standalone domain?', description: 'Yes! We can manage your standalone .com or .skin domain for just $15/year, handling all DNS and SSL setup for you.', icon: 'tabler:world' },
+        { title: 'Is this a monthly fee?', description: 'No. Launch.Skin is a one-time investment for setup and medical-grade design. You never pay a monthly fee again.', icon: 'tabler:coin' },
     ]}
-  />
+  >
+    <Fragment slot="bg"><div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div></Fragment>
+  </FAQs>
+
+  <Hero class="-mt-16">
+    <Fragment slot="image">
+      <img src="/images/testimonial-5.webp" alt="Practitioner reviewing feedback" class="mx-auto rounded-md w-full shadow-lg" loading="lazy" />
+    </Fragment>
+  </Hero>
 </Layout>

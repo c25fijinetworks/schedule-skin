@@ -2,50 +2,31 @@
 import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
 import GoogleContactForm from '~/components/widgets/GoogleContactForm.astro';
-import Hero from '~/components/widgets/Hero.astro';
 import Features from '~/components/widgets/Features.astro';
+import Hero from '~/components/widgets/Hero.astro';
 
 const metadata = {
-  title: 'Contact Support | Schedule.Skin',
-  description: 'Have questions about the lifetime deal or need a multi-location quote? Contact our team today.',
-  ignoreTitleTemplate: true,
+  title: 'Contact | Launch.Skin',
+  description: 'Reach out for white-glove setup or support for your clinic website.',
 };
 ---
-
 <Layout metadata={metadata}>
-  <!-- HeroText Widget -->
   <HeroText 
-    tagline="We're in your corner ⭐⭐⭐⭐⭐"
-    title="Let's Talk About Your Clinic." 
-    subtitle="Have questions about the lifetime deal? Need a bulk discount for multiple locations? Or just want to check up? We respond faster than a blow-dry."
+    tagline="Support"
+    title="We handle everything." 
+    subtitle="Have questions about the Launch.Skin Concept? Our team is ready to help your clinic shine online."
   />
-
-  <!-- Google Contact Form Widget -->
   <GoogleContactForm />
 
-  <!-- Added Features Widget to show we are a real business with support -->
   <Features
     class="-mt-16"
     columns={3}
     items={[
-      {
-        title: 'Multi-Location Discounts',
-        description: 'Running a franchise or multiple shops? Contact us for custom bulk pricing on 3+ locations.',
-        icon: 'tabler:building-store',
-      },
-      {
-        title: 'White-Glove Support',
-        description: 'Need help with your widget installation? Let us help you with that.',
-        icon: 'tabler:headset',
-      },
-      {
-        title: 'Partnerships',
-        description: 'Are you a Clinic consultant? Let’s work together.',
-        icon: 'tabler:users',
-      },
+      { title: 'Multi-Room Discounts', description: 'Running a large clinic or multiple spa locations? Contact us for bulk pricing on 3+ vanity URLs.', icon: 'tabler:building-store' },
+      { title: 'White-Glove Support', description: 'Need help with your Google Business integration? Our technical team is here to assist.', icon: 'tabler:headset' },
+      { title: 'Partner Program', description: 'Are you a clinical consultant or brand educator? Let’s talk about working together.', icon: 'tabler:users' },
     ]}
   />
 
-  <!-- Image -->
-  <Hero class="-mt-16" image={{ src: '/images/testimonial-7.webp', alt: 'Schedule.Skin happy client' }} />
+  <Hero class="-mt-16" image={{ src: '/images/testimonial-7.webp', alt: 'Launch.Skin happy practitioner' }} />
 </Layout>
