@@ -1,31 +1,43 @@
 ---
-import Layout from '~/layouts/PageLayout.astro';
+import Layout from '~/layouts/MarkdownLayout.astro';
 
 const metadata = {
-  title: 'Privacy Policy | Schedule.Skin',
+  title: 'Privacy Policy',
+  description: 'Privacy Policy for Schedule.Skin explaining our data collection and protection practices.',
 };
 ---
 
-<Layout metadata={metadata}>
-  <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-4xl">
-    <h1 class="font-bold font-heading text-4xl md:text-5xl leading-tighter tracking-tighter mb-8">Privacy Policy</h1>
-    <div class="mx-auto prose prose-lg max-w-4xl dark:prose-invert dark:prose-headings:text-slate-300 prose-md prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-blue-600 dark:prose-a:text-blue-400 mt-8">
-      <p>At <strong>Schedule.Skin</strong>, we are committed to protecting the privacy of skin care professionals and their patients. This Privacy Policy explains how we collect and use data.</p>
-      
-      <h2 class="text-2xl font-bold mt-8">Data We Collect</h2>
-      <p>We collect essential business information required to create your vanity URL, including your clinic name, existing booking links, and business contact information provided during the checkout process.</p>
+<Layout frontmatter={metadata}>
 
-      <h2 class="text-2xl font-bold mt-8">Google Business Integration</h2>
-      <p>When providing "White-Glove" setup support for your Google Business Profile, we do not require or store your Google account passwords. We utilize public links and guided setup to maintain your clinic's security.</p>
+**Effective Date:** January 1, 2024
 
-      <h2 class="text-2xl font-bold mt-8">Patient Data</h2>
-      <p>Schedule.Skin does not store patient medical records or individual appointment data. Any information entered by your clients into your booking system is handled directly by your primary booking provider (e.g., Jane, Vagaro, Fresha, etc.) and is subject to their respective privacy policies.</p>
+Schedule.Skin ("us", "we", or "our") operates the schedule.skin website and the related vanity URL Services (the "Service"). This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service.
 
-      <h2 class="text-2xl font-bold mt-8">Payment Processing</h2>
-      <p>Payments are processed via secure third-party gateways (PayPal or Stripe). Schedule.Skin does not store credit card or bank account information on our servers.</p>
+### 1. Information Collection and Use
+We collect several different types of information to provide and improve our Service to clinicians.
+- **Personal Data:** While using our Service, we may ask you to provide us with certain personally identifiable information (e.g., Email, Clinic Name, Booking Links).
+- **Patient Data:** Schedule.Skin does not store patient medical records or individual appointment data. Any information entered by your clients is handled directly by your primary booking provider.
 
-      <h2 class="text-2xl font-bold mt-8">Updates</h2>
-      <p>We may update this policy from time to time to reflect changes in our technical services or legal obligations. The most current version will always be posted here.</p>
-    </div>
-  </section>
+### 2. Tracking & Cookies Data
+We use cookies and similar tracking technologies to track activity on our Service and hold certain information. You can instruct your browser to refuse all cookies, though some portions of the Service may become inaccessible.
+
+### 3. Use of Data
+Schedule.Skin uses the collected data for various purposes:
+- To provide and maintain the vanity URL service.
+- To notify you about changes to our Service.
+- To provide customer support and "White-Glove" setup.
+- To monitor the technical usage of the Service.
+
+### 4. Security of Data
+The security of your data is important to us, but remember that no method of transmission over the Internet is 100% secure. We utilize commercially acceptable means to protect your Personal Data but cannot guarantee its absolute security.
+
+### 5. Payment Processing
+Payments are processed via secure third-party gateways. We do not store your credit card or bank account information on our servers.
+
+### 6. Governing Law
+This Privacy Policy and our privacy practices are governed by the laws of **the State of Delaware, United States**, without regard to its conflict of law principles. Any legal actions related to this policy shall be brought exclusively in the state or federal courts located in the State of Delaware.
+
+### 7. Contact Us
+If you have any questions about this Privacy Policy, please contact us through our [Contact Page](/contact).
+
 </Layout>

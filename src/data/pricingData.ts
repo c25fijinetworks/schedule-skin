@@ -1,13 +1,13 @@
 export const lifetimeDeal = {
-  title: 'Vanity Booking Plan (Lifetime)',
+  title: 'Clinic Vanity Plan (Lifetime)',
   subtitle: 'One-time payment for a professional edge.',
   price: 99,
   period: 'One-time payment',
   items: [
     { description: 'Premium Vanity URL (yourclinic.schedule.skin)' },
     { description: 'Medical-Grade Branding & Custom Setup' },
-    { description: 'Real-time Calendar & Booking' },
-    { description: 'Mobile-First User Experience' },
+    { description: 'Real-time Redirection Portal' },
+    { description: 'Mobile-First Patient Experience' },
     { description: 'Social & Google Business Integration' },
     { description: 'No monthly SaaS tax, ever!' },
     { description: 'White-Glove Tech Support Included' },
