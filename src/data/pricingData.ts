@@ -5,7 +5,7 @@ export const lifetimeDeal = {
   period: 'One-time payment',
   items: [
     { description: 'Premium Vanity URL (yourclinic.schedule.skin)' },
-    { description: 'Medical-Grade Branding & Custom Setup' },
+    { description: 'Luxury Clinical Identity Suite' },
     { description: 'Real-time Redirection Portal' },
     { description: 'Mobile-First Patient Experience' },
     { description: 'Social & Google Business Integration' },

@@ -1,0 +1,1 @@
+        { title: 'Luxury Patient Journey', description: 'Eliminate the "cheap" feel of generic redirection tools. Provide a seamless, high-end experience from the first click.', icon: 'tabler:sparkles' },
